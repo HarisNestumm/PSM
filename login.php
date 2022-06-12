@@ -1,3 +1,7 @@
+<?php
+
+echo 'hello world!';
+?>
 <!DOCTYPE html>
 <!-- saved from url=(0029)https://smap.uthm.edu.my/home -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
