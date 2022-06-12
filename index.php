@@ -5,7 +5,7 @@
 		$uri = 'http://';
 	}
 	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/smappersonal.html');
+	header('Location: '.$uri.'/login.php');
 	exit;
 ?>
 Something is wrong with the XAMPP installation :-(
