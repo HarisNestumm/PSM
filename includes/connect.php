@@ -4,10 +4,10 @@
 // $password = "";
 // $dbname = "preschoollearningsystem";
 
-// $servername = "remotemysql.com";
-// $username = "eD8koDsOxv";
-// $password = "N2M8xFsX3l";
-// $dbname = "eD8koDsOxv";
+$servername = "remotemysql.com";
+$username = "eD8koDsOxv";
+$password = "N2M8xFsX3l";
+$dbname = "eD8koDsOxv";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
