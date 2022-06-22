@@ -88,7 +88,7 @@ while ($row = $stmt->fetch()){
                                                 <form class="text-nowrap" method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
                                                     <div class="row">
                                                         <?php   
-                                                         $sql = "SELECT S.ID_SUBJEK,S.NAMA_SUBJEK,GS.ID_GURU FROM SUBJEK S,guru_subjek GS WHERE GS.ID_SUBJEK=S.ID_SUBJEK AND GS.ID_GURU = ".$id_guru."";
+                                                         $sql = "SELECT S.ID_SUBJEK,S.NAMA_SUBJEK,GS.ID_GURU FROM subjek S,guru_subjek GS WHERE GS.ID_SUBJEK=S.ID_SUBJEK AND GS.ID_GURU = ".$id_guru."";
                                                          $stmt = $conn->query($sql);
                                                          $i = 0;
                                                         ?>
