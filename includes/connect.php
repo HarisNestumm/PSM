@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "preschoollearningsystem";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "preschoollearningsystem";
 
 // $servername = "remotemysql.com";
 // $username = "eD8koDsOxv";
@@ -17,10 +17,10 @@ try {
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
 }
-define('DB_SERVER', 'localhost');////////mysqlremote
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'preschoollearningsystem');
+define('DB_SERVER', 'remotemysql.com');////////mysqlremote
+define('DB_USERNAME', 'eD8koDsOxv);
+define('DB_PASSWORD', 'N2M8xFsX3l');
+define('DB_NAME', 'eD8koDsOxv');
  
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
