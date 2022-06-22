@@ -18,7 +18,7 @@ try {
   echo "Connection failed: " . $e->getMessage();
 }
 define('DB_SERVER', 'remotemysql.com');////////mysqlremote
-define('DB_USERNAME', 'eD8koDsOxv);
+define('DB_USERNAME', 'eD8koDsOxv');
 define('DB_PASSWORD', 'N2M8xFsX3l');
 define('DB_NAME', 'eD8koDsOxv');
  
