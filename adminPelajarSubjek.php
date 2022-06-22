@@ -145,7 +145,7 @@ else
                                         <div class="row">
                                             <?php   
                                                 
-                                                $sql = "SELECT *FROM SUBJEK WHERE ID_SUBJEK NOT IN (SELECT ID_SUBJEK FROM pelajar_subjek WHERE ID_PELAJAR=".$_SESSION["idp"].")";
+                                                $sql = "SELECT *FROM subjek WHERE ID_SUBJEK NOT IN (SELECT ID_SUBJEK FROM pelajar_subjek WHERE ID_PELAJAR=".$_SESSION["idp"].")";
                                                 $stmt = $conn->query($sql);
                                                 $i = 0;
 
