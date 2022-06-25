@@ -47,13 +47,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $stmt -> execute();
     move_uploaded_file($_FILES["Tugasan"]["tmp_name"], $dokumen_file);
 
-    echo "Tugasan Berjaya Dihantar";
+    echo ("<script>window.alert('Tugasan Berjaya Dihantar.');
+    window.location.href='./pelajarMatapelajaran.php'</script>");
+    } 
+    else {
+        echo ("<script>window.alert('Sila Isi Semua Maklumat.');</script>");
     }
-    else
-    {
-        echo "Sila Isi Semua Maklumat.";
-    }
-
     $sql1 = "SELECT * FROM tugasan_pelajar";
 }
 ?>
