@@ -10,7 +10,8 @@
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(":NAMA_SUBJEK", $namasubjek);
     $stmt -> execute();
-    echo "Subjek Berjaya Didaftarkan";
+    echo ("<script>window.alert('Subjek Berjaya Didaftarkan.');
+    window.location.href='./adminSenaraiSubjek.php'</script>");
     }
     else
     {
