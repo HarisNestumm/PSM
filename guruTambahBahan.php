@@ -32,7 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $stmt -> execute();
     move_uploaded_file($_FILES["Nota"]["tmp_name"], $dokumen_file);
 
-    echo ("<script>window.alert('Bahan Pembelajaran Berjaya Dimasukkan');</script>");
+    echo ("<script>window.alert('Bahan Pembelajaran Berjaya Dimasukkan');
+    window.location.href='./guruMatapelajaran.php'</script>");
     }
     else
     echo ("<script>window.alert('Sila Isi Semua Maklumat.');</script>");
