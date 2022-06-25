@@ -122,7 +122,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                             <div class="card-body">
                             <?php while ($row = $stmt->fetch()){?> 
                                 <div><input class="d-none" name="id" value="<?php  echo $row['ID_TUGASAN_GURU']; ?>"><label class="form-label">Tajuk Bahan:</label><input class="form-control" name = "Tajuk" type="text" value="<?php echo $row['TAJUK']; ?>"></div><br>
-                                <div><input class="d-none" name="id" value="<?php  echo $row['ID_TUGASAN_GURU']; ?>"><label class="form-label">Nota:</label><input class="form-control" name = "Nota" type="file" value="<?php echo $row['TUGASAN']; ?>"></div><br>
+                                <div><input class="d-none" name="id" value="<?php  echo $row['ID_TUGASAN_GURU']; ?>"><label class="form-label">Tugasan (Sila Masukkan Semula Fail Tugasan):</label><input class="form-control" name = "Tugasan" type="file" value="<?php echo $row['TUGASAN']; ?>" placeholder="Isi Fail"></div><br>
                                 <div><input class="d-none" name="id" value="<?php echo $row['ID_TUGASAN_GURU']; ?>"><label class="form-label">Tarikh:</label><input class="form-control" name = "Tarikh" type="date" value="<?php echo $row['TARIKH'];?>"></div><br>
                                 <?php }?>
                                 <div></div><br><br>
