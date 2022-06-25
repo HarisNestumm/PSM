@@ -34,10 +34,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $stmt->bindParam(":TARIKH", $tarikh);
     $stmt -> execute();
     move_uploaded_file($_FILES["Tugasan"]["tmp_name"], $dokumen_file);
-    echo ("<script>window.alert('Subjek Berjaya Didaftarkan.');</script>");
+    echo ("<script>window.alert('Tugasan Berjaya Dihantar.');
+    window.location.href='./guruMatapelajaran.php'</script>");
     } 
     else {
-        echo ("<script>window.alert('Sila Pilih Subjek.');</script>");
+        echo ("<script>window.alert('Sila Isi Semua Maklumat.');</script>");
     }
 }
 ?>
