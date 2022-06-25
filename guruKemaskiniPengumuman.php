@@ -18,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $id = $_POST['id'];
 
     if(isset($tajuk) && isset($penerangan) && !empty($dokumen) && !empty($tarikh)){
-        include ("./includes/connect.php");
+       
         $sql = "UPDATE pengumuman SET TAJUK = :TAJUK, PENERANGAN = :PENERANGAN, DOKUMEN = :DOKUMEN, TARIKH = :TARIKH WHERE ID_PENGUMUMAN = :ID_PENGUMUMAN";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(":TAJUK", $tajuk);
@@ -127,7 +127,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                 <?php while ($row = $stmt->fetch()){?> 
                             <div><input class="d-none" name="id" value="<?php /*while($row = $stmt->fetch()){*/ echo $row['ID_PENGUMUMAN']; ?>"><label class="form-label">Tajuk Pengumuman:</label><input class="form-control" name = "tajuk" type="text" value="<?php echo $row['TAJUK']; ?>"></div><br>
                             <div><input class="d-none" name="id" value="<?php /*while($row = $stmt->fetch()){*/echo $row['ID_PENGUMUMAN']; ?>"><label class="form-label">Penerangan:</label><input class="form-control" name = "penerangan" type="text" value="<?php echo $row['PENERANGAN']; ?>"></div><br>
-                            <div><input class="d-none" name="id" value="<?php /*while($row = $stmt->fetch()){*/ echo $row['ID_PENGUMUMAN']; ?>"><label class="form-label">Dokumen:</label><input class="form-control" name = "dokumen" type="file" value="<?php echo $row['DOKUMEN']; ?>"></div><br>
+                            <div><input class="d-none" name="id" value="<?php /*while($row = $stmt->fetch()){*/ echo $row['ID_PENGUMUMAN']; ?>"><label class="form-label">Dokumen:</label><input class="form-control" name = "dokumen" type="file" value="<?php echo $row['DOKUMEN']; ?>" placeholder="Isi Fail"></div><br>
                             <div><input class="d-none" name="id" value="<?php /*while($row = $stmt->fetch()){*/ echo $row['ID_PENGUMUMAN']; ?>"><label class="form-label">Tarikh:</label><input class="form-control" name = "tarikh" type="date" value="<?php echo $row['TARIKH']; ?>"></div><br>
                                 <?php } ?>
                             <div></div><br><br>
