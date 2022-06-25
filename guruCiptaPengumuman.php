@@ -35,8 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $stmt->bindParam(":TARIKH", $tarikh);
     $stmt -> execute();
     move_uploaded_file($_FILES["Dokumen"]["tmp_name"], $dokumen_file);
-    echo "<script>alert('Pengumuman Berjaya Dimasukkan.');
-            windows.location.href='./guruHomedashboard.php'</script>";
+    echo ("<script>alert('Pengumuman Berjaya Dimasukkan.');
+            windows.location.href='./guruHomedashboard.php'</script>");
     }
     else
     {
