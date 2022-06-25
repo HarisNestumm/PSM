@@ -5,9 +5,9 @@
 // $dbname = "preschoollearningsystem";
 
 $servername = "remotemysql.com";
-$username = "eD8koDsOxv";
-$password = "N2M8xFsX3l";
-$dbname = "eD8koDsOxv";
+$username = "cSFHLhICll";
+$password = "vwVIuO1p9J";
+$dbname = "cSFHLhICll";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -18,9 +18,9 @@ try {
   echo "Connection failed: " . $e->getMessage();
 }
 define('DB_SERVER', 'remotemysql.com');////////mysqlremote
-define('DB_USERNAME', 'eD8koDsOxv');
-define('DB_PASSWORD', 'N2M8xFsX3l');
-define('DB_NAME', 'eD8koDsOxv');
+define('DB_USERNAME', 'cSFHLhICll');
+define('DB_PASSWORD', 'vwVIuO1p9J');
+define('DB_NAME', 'cSFHLhICll');
  
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
