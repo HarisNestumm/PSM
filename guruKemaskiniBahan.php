@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $id = $_POST['id'];
 
     if(!empty($tajuk) && !empty($dokumen) && !empty($tarikh) ){
-        include ("./includes/connect.php");
+        
         
     $sql = "UPDATE bahan_pembelajaran SET TAJUK_BAHAN = :TAJUK_BAHAN, NOTA = :NOTA, TARIKH = :TARIKH WHERE ID_BAHAN = :ID_BAHAN";
     
